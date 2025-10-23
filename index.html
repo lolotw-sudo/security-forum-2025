@@ -73,107 +73,51 @@
         <div class="glass rounded-3xl p-6 ring-1 ring-white/10">
           <h3 class="text-xl font-bold  text-black">主題亮</h3>
           <ul class="mt-4 space-y-3  text-black ">
-              <li>• 網安破口解方－電信商全域防禦</li>
-              <li>• 前瞻技術部專題－後量子密碼 × 零信任安全架構</li>
-              <li>• 網安威脅應急－Telecom 資安趨勢解析</li>
-              <li>• 攻防實戰演練－沉浸式網安攻防技術</li>
+            <li>• 網安破口解方－電信商全域防禦</li>
+            <li>• 前瞻技術部專題－後量子密碼 × 零信任安全架構</li>
+            <li>• 網安威脅應急－Telecom 資安趨勢解析</li>
+            <li>• 攻防實戰演練－沉浸式網安攻防技術</li>
           </ul>
         </div>
       </div>
-            <!-- Carousel starts: autoplay, indicators, prev/next, touch support -->
-            <div id="carousel" class="relative max-w-full mx-auto overflow-hidden rounded-lg mt-4" aria-roledescription="carousel">
-              <div class="carousel-track flex transition-transform duration-700 ease-in-out" style="will-change:transform">
-                <div class="min-w-full flex-shrink-0" role="group" aria-roledescription="slide" aria-label="1 / 4">
-                  <img src="/assets/slide-1.webp" alt="主題亮點 - 圖片一" class="w-full h-[420px] sm:h-[560px] object-cover">
-                </div>
-                <div class="min-w-full flex-shrink-0" role="group" aria-roledescription="slide" aria-label="2 / 4">
-                  <img src="/assets/slide-2.webp" alt="主題亮點 - 圖片二" class="w-full h-[420px] sm:h-[560px] object-cover">
-                </div>
-                <div class="min-w-full flex-shrink-0" role="group" aria-roledescription="slide" aria-label="3 / 4">
-                  <img src="/assets/slide-3.webp" alt="主題亮點 - 圖片三" class="w-full h-[420px] sm:h-[560px] object-cover">
-                </div>
-                <div class="min-w-full flex-shrink-0" role="group" aria-roledescription="slide" aria-label="4 / 4">
-                  <img src="/assets/slide-4.webp" alt="主題亮點 - 圖片四" class="w-full h-[420px] sm:h-[560px] object-cover">
-                </div>
-              </div>
+    </div>
+  </section>
 
-              <!-- prev/next -->
-              <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2" aria-label="上一張">‹</button>
-              <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2" aria-label="下一張">›</button>
+  <section id="about" class="py-16 md:py-20 bg-slate-950/30">
+    <div class="mx-auto max-w-5xl px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">緣由與目的</h2>
+      <p class="mt-4 leading-relaxed text-slate-200/90">
+        近年全球電信業面臨日益嚴峻的網路安全挑戰，駭客攻擊手法隨 AI 技術演進而快速變化，造成防守方壓力倍增。為協助同仁強化資安防護能力與技術佈局，本研討會邀請產業專家分享實務經驗與創新技術，提升整體網安意識與應變能力，並促進跨部門建立共同語言與合作機制。
+      </p>
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <p class="text-sm text-slate-300">時間</p>
+          <p class="mt-1 text-lg font-semibold">2025/12/10（三）09:00入場</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <p class="text-sm text-slate-300">地點</p>
+          <p class="mt-1 text-lg font-semibold">總公司 1201 會場（台北市信義路一段21-3號）</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <p class="text-sm text-slate-300">對象</p>
+          <p class="mt-1 text-lg font-semibold">網路規設／維運／資安相關人員</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-              <!-- indicators -->
-              <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                <button class="carousel-indicator w-3 h-3 rounded-full bg-white/90" data-slide="0" aria-label="切到第 1 張" aria-pressed="true"></button>
-                <button class="carousel-indicator w-3 h-3 rounded-full bg-white/40" data-slide="1" aria-label="切到第 2 張" aria-pressed="false"></button>
-                <button class="carousel-indicator w-3 h-3 rounded-full bg-white/40" data-slide="2" aria-label="切到第 3 張" aria-pressed="false"></button>
-                <button class="carousel-indicator w-3 h-3 rounded-full bg-white/40" data-slide="3" aria-label="切到第 4 張" aria-pressed="false"></button>
-              </div>
-
-              <noscript>
-                <div class="mt-4">
-                  <img src="/assets/slide-1.webp" alt="主題亮點 - 圖片一" class="w-full object-cover">
-                </div>
-              </noscript>
-            <!-- Carousel ends -->
-    <script>
-    (function(){
-      const carousel = document.getElementById('carousel');
-      if (!carousel) return;
-      const track = carousel.querySelector('.carousel-track');
-      const slides = Array.from(track.children);
-      const indicators = Array.from(carousel.querySelectorAll('.carousel-indicator'));
-      const prevBtn = carousel.querySelector('.carousel-prev');
-      const nextBtn = carousel.querySelector('.carousel-next');
-      const total = slides.length;
-      let index = 0;
-      let interval = 3800;
-      let timer = null;
-      let startX = null;
-
-      function update() {
-        track.style.transform = `translateX(-${index * 100}%)`;
-        slides.forEach((s, i) => s.setAttribute('aria-hidden', i !== index));
-        indicators.forEach((btn, i) => {
-          btn.classList.toggle('bg-white/90', i === index);
-          btn.classList.toggle('bg-white/40', i !== index);
-          btn.setAttribute('aria-pressed', i === index ? 'true' : 'false');
-        });
-      }
-
-      function goTo(i) { index = (i + total) % total; update(); }
-      function next() { goTo(index + 1); }
-      function prev() { goTo(index - 1); }
-      function start() { stop(); timer = setInterval(next, interval); }
-      function stop() { if (timer) { clearInterval(timer); timer = null; } }
-
-      // indicators
-      indicators.forEach(btn => btn.addEventListener('click', () => { goTo(Number(btn.dataset.slide)); start(); }));
-
-      // buttons
-      if (nextBtn) nextBtn.addEventListener('click', () => { next(); start(); });
-      if (prevBtn) prevBtn.addEventListener('click', () => { prev(); start(); });
-
-      // pause on hover/focus
-      carousel.addEventListener('mouseenter', stop);
-      carousel.addEventListener('mouseleave', start);
-      carousel.addEventListener('focusin', stop);
-      carousel.addEventListener('focusout', start);
-
-      // keyboard
-      document.addEventListener('keydown', (e) => { if (e.key === 'ArrowLeft') { prev(); start(); } if (e.key === 'ArrowRight') { next(); start(); } });
-
-      // visibility
-      document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); else start(); });
-
-      // touch support (basic)
-      carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; stop(); }, {passive:true});
-      carousel.addEventListener('touchmove', (e) => { if (!startX) return; const dx = e.touches[0].clientX - startX; if (Math.abs(dx) > 50) { if (dx > 0) prev(); else next(); startX = null; } }, {passive:true});
-      carousel.addEventListener('touchend', () => { startX = null; start(); });
-
-      // init
-      update(); start();
-    })();
-    </script>
+  <section id="agenda" class="py-16 md:py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl md:text-3xl font-extrabold">議程</h2>
+        <span class="text-xs text-slate-400">※ 時間可能依現場調整</span>
+      </div>
+      <div class="mt-6 grid gap-4">
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10"><div class="flex items-center gap-3"><div class="shrink-0 rounded-lg bg-cyan-400/20 px-3 py-1 text-cyan-200 font-semibold">09:30</div><h3 class="text-lg font-bold">研討會正式開幕・貴賓蒞臨致詞</h3></div></article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10"><div class="flex items-center gap-3"><div class="shrink-0 rounded-lg bg-cyan-400/20 px-3 py-1 text-cyan-200 font-semibold">09:40</div><h3 class="text-lg font-bold">電信商全域防禦：網路韌性建構與新興網安威脅應對策略 /中華資安王信富副總  </h3></div></article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10"><div class="flex items-center gap-3"><div class="shrink-0 rounded-lg bg-cyan-400/20 px-3 py-1 text-cyan-200 font-semibold">10:25</div><h3 class="text-lg font-bold">後量子密碼遷移 /TL資安所周國森經理 </h3></div></article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10"><div class="flex items-center gap-3"><div class="shrink-0 rounded-lg bg-cyan-400/20 px-3 py-1 text-cyan-200 font-semibold">10:45</div><h3 class="text-lg font-bold">零信任架構導論 /TL資安所汪志軒副理 </h3></div></article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10"><div class="flex items-center gap-3"><div class="shrink-0 rounded-lg bg-cyan-400/20 px-3 py-1 text-cyan-200 font-semibold">11:25</div><h3 class="text-lg font-bold">Telecom cybersecurity threats are rising — are you ready? /Nokia 資安專家</h3></div></article>
         <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10"><div class="flex items-center gap-3"><div class="shrink-0 rounded-lg bg-cyan-400/20 px-3 py-1 text-cyan-200 font-semibold">11:55</div><h3 class="text-lg font-bold">網安事件攻防演練/InfoSec Taiwan 國際資安組織大會創辦人蔡一郎講師 </h3></div></article>
         <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10"><div class="flex items-center gap-3"><div class="shrink-0 rounded-lg bg-cyan-400/20 px-3 py-1 text-cyan-200 font-semibold">12:30</div><h3 class="text-lg font-bold">研討會圓滿落幕・感謝蒞臨</h3></div></article>
       </div>
