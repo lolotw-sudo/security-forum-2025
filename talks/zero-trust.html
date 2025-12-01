@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>零信任架構解析｜講義下載與AI懶人包</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-300/30">
+  <header class="mx-auto max-w-6xl px-4 py-6">
+    <nav class="text-sm text-slate-400">
+      <a href="../index.html" class="hover:text-cyan-300">首頁</a>
+      <span class="px-2">/</span>
+      <a href="../index.html#speakers" class="hover:text-cyan-300">講義下載</a>
+      <span class="px-2">/</span>
+      <span class="text-slate-200">零信任架構解析</span>
+    </nav>
+  </header>
+
+  <section>
+    <div class="mx-auto max-w-6xl px-4 py-6 md:py-10">
+      <div class="grid md:grid-cols-3 gap-6 items-center">
+         <div class="relative aspect-[16/9] rounded-xl overflow-hidden ring-1 ring-cyan-400/20 bg-slate-800">
+          <img src="../assets/speakers/4.webp" alt="零信任架構解析" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.25),transparent_70%)]"></div>
+        </div>
+        <div class="md:col-span-2">
+          <h1 class="text-2xl md:text-4xl font-extrabold leading-tight">
+            <span class="text-cyan-300">零信任架構解析</span>：從概念到網路實作
+          </h1>
+          <p class="mt-3 text-slate-300/90">講者｜汪志軒 副理（TL 資安所）</p>
+          <p class="mt-2 text-slate-400 text-sm">面向：前瞻網安技術部署</p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 md:py-8">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl font-bold mb-3">講義下載</h2>
+      <div class="flex flex-wrap gap-3">
+         <a href="https://drive.google.com/drive/folders/1bSQEZp10jrAxMAm2KnB4cZiozGXrhZN2?usp=drive_link" class="inline-flex items-center gap-2 rounded-lg bg-cyan-400/20 px-4 py-2 ring-1 ring-cyan-400/40 hover:bg-cyan-400/30">
+          <span class="text-cyan-200 font-semibold">PDF</span>
+          <span class="text-slate-200">投影片下載</span>
+        </a>
+        <a href="https://reurl.cc/NN0Vln" class="inline-flex items-center gap-2 rounded-lg bg-cyan-400/10 px-4 py-2 ring-1 ring-cyan-400/30 hover:bg-cyan-400/20">
+          <span class="text-cyan-200 font-semibold">AI</span>
+          <span class="text-slate-200">摘要講義</span>
+        </a>
+      </div>
+     
+    </div>
+  </section>
+
+  <section class="py-4 md:py-6">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-xl font-bold mb-3">AI 懶人包（3 分鐘看懂）</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <h3 class="font-bold text-cyan-300 mb-2">1｜什麼是「零信任」？</h3>
+          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
+            <li>核心精神：<strong>永不預設信任、持續驗證、最小權限</strong>。</li>
+            <li>邊界不再是防火牆，而是每一次的存取請求。</li>
+            <li>不只是技術，更是身份、設備、應用與資料一整套策略。</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <h3 class="font-bold text-cyan-300 mb-2">2｜電信與企業如何落地？</h3>
+          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
+            <li>從「使用者與管理員身分」開始：MFA、強認證、權限分層。</li>
+            <li>縮小 blast radius：網段／服務分區、微分段與細粒度 ACL。</li>
+            <li>導入存取 Proxy / Gateway，集中做存取控制與紀錄。</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <h3 class="font-bold text-cyan-300 mb-2">3｜實作時常見坑與建議</h3>
+          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
+            <li>一次要做完所有系統會失敗，建議以「關鍵服務」為單位分波導入。</li>
+            <li>要先整理帳號與權限，不然零信任只是多了一層複雜度。</li>
+            <li>持續監控與調整策略（Policy），而不是上線就放著不管。</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-4 md:py-8">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <h3 class="font-bold mb-2 text-cyan-300">適合對象</h3>
+        <p class="text-slate-300/90">企業與電信網路架構師、資安負責人、ID 管理與身分服務負責同仁。</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <h3 class="font-bold mb-2 text-cyan-300">學完可以做什麼？</h3>
+        <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
+          <li>為公司畫出簡易版「零信任藍圖」。</li>
+          <li>選出 1～2 個關鍵服務作為零信任 PoC 對象。</li>
+          <li>和主管討論分階段導入的影響與預期成效。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mx-auto max-w-6xl px-4 py-10">
+    <a href="../index.html#speakers"
+       class="inline-flex items-center gap-2 rounded-lg bg-white/5 px-4 py-2 ring-1 ring-white/10 hover:bg-white/10">
+       ← 回講義下載列表
+    </a>
+  </footer>
+</body>
+</html>

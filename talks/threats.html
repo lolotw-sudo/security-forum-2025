@@ -3,38 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>電信商全域防禦｜講義下載與AI懶人包</title>
+  <title>全球電信網路攻擊趨勢及因應｜講義下載與AI懶人包</title>
   <link rel="icon" href="../assets/favicon.png" type="image/png">
-  <!-- Tailwind CDN（若你專案已內嵌可移除這行） -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 selection:bg-cyan-300/30">
-  <!-- 頁首 / 麵包屑 -->
+  <!-- header / breadcrumb -->
   <header class="mx-auto max-w-6xl px-4 py-6">
     <nav class="text-sm text-slate-400">
       <a href="../index.html" class="hover:text-cyan-300">首頁</a>
       <span class="px-2">/</span>
-      <a href="../index.html#downloads" class="hover:text-cyan-300">講義下載</a>
+      <a href="../index.html#speakers" class="hover:text-cyan-300">講義下載</a>
       <span class="px-2">/</span>
-      <span class="text-slate-200">電信商全域防禦</span>
+      <span class="text-slate-200">全球電信網路攻擊趨勢及因應</span>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="relative">
+  <!-- hero -->
+  <section>
     <div class="mx-auto max-w-6xl px-4 py-6 md:py-10">
       <div class="grid md:grid-cols-3 gap-6 items-center">
-       <div class="relative aspect-[16/9] rounded-xl overflow-hidden ring-1 ring-cyan-400/20 bg-slate-800">
-          <img src="../assets/speakers/1.webp" alt="電信商全域防禦"
-               class="w-full h-full object-cover">
+        <!-- 封面圖：請換成你的圖 -->
+        <div class="relative aspect-[16/9] rounded-xl overflow-hidden ring-1 ring-cyan-400/20 bg-slate-800">
+          <img src="../assets/speakers/2.webp" alt="全球電信網路攻擊趨勢及因應" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.25),transparent_70%)]"></div>
         </div>
+        <!-- 文字 -->
         <div class="md:col-span-2">
           <h1 class="text-2xl md:text-4xl font-extrabold leading-tight">
-            <span class="text-cyan-300">電信商全域防禦</span>：網路韌性建構與新興網安威脅應對策略
+            <span class="text-cyan-300">全球電信網路攻擊趨勢</span> 及因應策略
           </h1>
-          <p class="mt-3 text-slate-300/90">講者｜王信富 副總（中華資安國際）</p>
-          <p class="mt-2 text-slate-400 text-sm">面向：網安破口解方</p>
+          <p class="mt-3 text-slate-300/90">講者｜Sarah LU（Nokia CNS GBC Country Leader Taiwan）</p>
+          <p class="mt-2 text-slate-400 text-sm">面向：網安威脅應處</p>
         </div>
         
       </div>
@@ -46,17 +46,16 @@
     <div class="mx-auto max-w-6xl px-4">
       <h2 class="text-xl font-bold mb-3">講義下載</h2>
       <div class="flex flex-wrap gap-3">
-        <!-- 下載按鈕：改成你的實際連結（可放雲端/公司內網） -->
         <a href="https://drive.google.com/drive/folders/1bSQEZp10jrAxMAm2KnB4cZiozGXrhZN2?usp=drive_link" class="inline-flex items-center gap-2 rounded-lg bg-cyan-400/20 px-4 py-2 ring-1 ring-cyan-400/40 hover:bg-cyan-400/30">
           <span class="text-cyan-200 font-semibold">PDF</span>
           <span class="text-slate-200">投影片下載</span>
         </a>
-        <a href="https://reurl.cc/2lLpY4" class="inline-flex items-center gap-2 rounded-lg bg-cyan-400/10 px-4 py-2 ring-1 ring-cyan-400/30 hover:bg-cyan-400/20">
+        <a href="https://reurl.cc/pK6O9x" class="inline-flex items-center gap-2 rounded-lg bg-cyan-400/10 px-4 py-2 ring-1 ring-cyan-400/30 hover:bg-cyan-400/20">
           <span class="text-cyan-200 font-semibold">AI</span>
           <span class="text-slate-200">摘要講義</span>
         </a>
       </div>
-    
+     
     </div>
   </section>
 
@@ -64,37 +63,32 @@
   <section class="py-4 md:py-6">
     <div class="mx-auto max-w-6xl px-4">
       <h2 class="text-xl font-bold mb-3">AI 懶人包（3 分鐘看懂）</h2>
-
       <div class="grid md:grid-cols-3 gap-6">
         <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">1｜核心觀念</h3>
+          <h3 class="font-bold text-cyan-300 mb-2">1｜現在的攻擊長什麼樣子？</h3>
           <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>全域防禦＝橫跨人員、流程、技術、供應鏈的整體性防護。</li>
-            <li>以<strong>韌性</strong>為目標：預防、偵測、回應、復原四循環。</li>
-            <li>AI 時代攻擊面擴大：憑證濫用、API/邊緣節點、供應鏈與社工強化。</li>
+            <li>攻擊從單一目標轉為「多點同時」：DNS、核心網、邊緣節點一起打。</li>
+            <li>勒索、DDoS 與供應鏈攻擊交錯出現，事件週期從「年」縮短為「週」。</li>
+            <li>AI 讓釣魚信、社交工程更像真人，傳統關鍵字過濾愈來愈難防。</li>
           </ul>
         </article>
-
         <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">2｜實戰做法</h3>
+          <h3 class="font-bold text-cyan-300 mb-2">2｜電信網路特有的風險</h3>
           <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>建立以 <strong>資產可視化</strong> 與 <strong>攻擊路徑</strong> 為核心的風險盤點。</li>
-            <li>落地零信任：身分為邊界、最小權限、持續驗證與細粒度分段。</li>
-            <li>備援與演練：RTO/RPO 目標、Tabletop/紅隊、SLA 落實。</li>
+            <li>信令與管理平面若被打穿，影響不只是「上不了網」，而是國家等級事件。</li>
+            <li>Roaming、國際互聯、雲化核心網，讓邊界模糊、責任分散。</li>
+            <li>老舊設備 + 新技術共存，補洞節奏跟不上攻擊演化速度。</li>
           </ul>
         </article>
-
         <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">3｜帶回組織的清單</h3>
+          <h3 class="font-bold text-cyan-300 mb-2">3｜可以立刻啟動的應對策略</h3>
           <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>關鍵服務攻擊面 Top 5 與修補路線圖（90 天內）。</li>
-            <li>高風險帳號與機器憑證整頓名單。</li>
-            <li>跨部門演練節奏：季紅隊、月桌練、周復盤。</li>
+            <li>先畫出「關鍵服務拓樸」與東西向流量，找出最易被打斷的節點。</li>
+            <li>導入威脅情資與自動化防護（SOAR / 行為偵測），縮短偵測與處置時間。</li>
+            <li>與設備商、雲端與國際夥伴建立「事件通報與聯防機制」。</li>
           </ul>
         </article>
       </div>
-
-     
     </div>
   </section>
 
@@ -103,24 +97,24 @@
     <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
       <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
         <h3 class="font-bold mb-2 text-cyan-300">適合對象</h3>
-        <p class="text-slate-300/90">網路規設／維運、資安與紅隊、IT 管理、關鍵服務系統負責人。</p>
+        <p class="text-slate-300/90">網路規劃與維運人員、資安團隊、SOC 分析師、風險管理與主管階層。</p>
       </div>
       <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-        <h3 class="font-bold mb-2 text-cyan-300">你將獲得</h3>
+        <h3 class="font-bold mb-2 text-cyan-300">帶回去可以做的事</h3>
         <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-          <li>全域防禦藍圖與 90 天落地清單</li>
-          <li>零信任導入檢核點</li>
-          <li>演練節奏與復原目標設定範例</li>
+          <li>比對自家網路與講題中的攻擊案例，盤點是否存在相同弱點。</li>
+          <li>根據講者建議列出「未來 6 個月優先強化項目清單」。</li>
+          <li>與夥伴單位建立 incident 通報與聯防 contact list。</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- 回上一層 -->
+  <!-- back -->
   <footer class="mx-auto max-w-6xl px-4 py-10">
-    <a href="../index.html#downloads"
+    <a href="../index.html#speakers"
        class="inline-flex items-center gap-2 rounded-lg bg-white/5 px-4 py-2 ring-1 ring-white/10 hover:bg-white/10">
-      ← 回講義下載列表
+       ← 回講義下載列表
     </a>
   </footer>
 </body>
