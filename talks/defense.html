@@ -59,60 +59,88 @@
     
     </div>
   </section>
-
-  <!-- AI 懶人包 -->
+ <!-- AI 懶人包 -->
   <section class="py-4 md:py-6">
-    <div class="mx-auto max-w-6xl px-4">
+    <div class="mb-8 mx-auto max-w-6xl px-4">
       <h2 class="text-xl font-bold mb-3">AI 懶人包（3 分鐘看懂）</h2>
+<p class="mb-8 text-sm text-slate-300">
+        本場以 SK Telecom 供應鏈事件為例，解析電信商如何從「邊界防禦」走向「全域韌性 × 零信任 × 供應鏈管理」，
+        在 Assume Breach 的前提下重組防禦結界。
+      </p>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">1｜核心觀念</h3>
-          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>全域防禦＝橫跨人員、流程、技術、供應鏈的整體性防護。</li>
-            <li>以<strong>韌性</strong>為目標：預防、偵測、回應、復原四循環。</li>
-            <li>AI 時代攻擊面擴大：憑證濫用、API/邊緣節點、供應鏈與社工強化。</li>
-          </ul>
-        </article>
+   
 
-        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">2｜實戰做法</h3>
-          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>建立以 <strong>資產可視化</strong> 與 <strong>攻擊路徑</strong> 為核心的風險盤點。</li>
-            <li>落地零信任：身分為邊界、最小權限、持續驗證與細粒度分段。</li>
-            <li>備援與演練：RTO/RPO 目標、Tabletop/紅隊、SLA 落實。</li>
-          </ul>
-        </article>
+    <!-- 上排：三張卡片（核心觀念 / 實戰做法 / 落地清單） -->
+    <!-- div class="mb-8 grid md:grid-cols-3 gap-6">-->
+     <div class="mb-8 grid md:grid-cols-3 gap-6">
 
-        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">3｜帶回組織的清單</h3>
-          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>關鍵服務攻擊面 Top 5 與修補路線圖（90 天內）。</li>
-            <li>高風險帳號與機器憑證整頓名單。</li>
-            <li>跨部門演練節奏：季紅隊、月桌練、周復盤。</li>
-          </ul>
-        </article>
-      </div>
-
-     
-    </div>
-  </section>
-
-  <!-- 其它資訊 -->
-  <section class="py-4 md:py-8">
-    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
-      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-        <h3 class="font-bold mb-2 text-cyan-300">適合對象</h3>
-        <p class="text-slate-300/90">網路規設／維運、資安與紅隊、IT 管理、關鍵服務系統負責人。</p>
-      </div>
-      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-        <h3 class="font-bold mb-2 text-cyan-300">你將獲得</h3>
-        <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-          <li>全域防禦藍圖與 90 天落地清單</li>
-          <li>零信任導入檢核點</li>
-          <li>演練節奏與復原目標設定範例</li>
+      <!-- 1｜核心觀念 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-cyan-200 mb-3">1｜核心觀念</h3>
+        <ul class="text-sm text-slate-200 space-y-2">
+          <li><span class="text-cyan-300 font-semibold">邊界已死：</span>攻擊多來自合法帳號、供應鏈與 VPN，真正的邊界變成「身分」與「存取請求」。</li>
+          <li><span class="text-cyan-300 font-semibold">假設被駭：</span>防禦重心轉向「偵測 × 限制 × 復原」，以韌性思維設計架構。</li>
+          <li><span class="text-cyan-300 font-semibold">電信商是國家級目標：</span>海纜、HSS/UDM、漫遊信令到家用 CPE，任何一個點被拿下都可能影響關鍵基礎設施與國家安全。</li>
         </ul>
-      </div>
+      </section>
+
+      <!-- 2｜實戰做法 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-emerald-200 mb-3">2｜實戰做法</h3>
+        <ul class="text-sm text-slate-200 space-y-2">
+          <li><span class="text-emerald-300 font-semibold">可視性：</span>導入流量側錄、EDR/MDR、異常行為偵測與 SOC 24/7 監控，看見真正的攻擊路徑。</li>
+          <li><span class="text-emerald-300 font-semibold">零信任：</span>MFA、JIT 授權、微分段，搭配 SDP 隱藏管理面，讓攻擊者連掃描都看不到。</li>
+          <li><span class="text-emerald-300 font-semibold">供應鏈安全：</span>透過 TPRM 納管廠商 VPN、外包維運與第三方跳板，避免合作夥伴成為初始入侵點。</li>
+          <li><span class="text-emerald-300 font-semibold">韌性四循環：</span>預防 → 偵測 → 回應 → 復原，以演練與復盤持續調整防禦策略。</li>
+        </ul>
+      </section>
+
+      <!-- 3｜落地清單 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-amber-200 mb-3">3｜落地清單（90 天）</h3>
+        <ul class="text-sm text-slate-200 space-y-2">
+          <li>盤點高權限與共用帳號、跳板機、弱加密／舊協定服務。</li>
+          <li>啟用全站 MFA，將管理面隱身並對核心系統導入微分段與服務白名單。</li>
+          <li>在核心網與維運網上線流量側錄，集中 DNS／VPN／身分驗證日誌到 SOC。</li>
+          <li>建立節奏：桌上兵棋（月）、紅隊或滲透測試（季）、重大事件演練（年）。</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- 下排：兩張卡片（適合對象 / 你將獲得） -->
+    <div class="mb-8 grid md:grid-cols-2 gap-6">
+
+      <!-- 適合對象 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-sky-200 mb-2">🎯 適合對象</h3>
+        <ul class="text-sm text-slate-200 space-y-1">
+          <li>電信網路規設、核心網與維運（O&amp;M / Core）人員</li>
+          <li>SOC 分析師、滲透測試與紅隊成員</li>
+          <li>海纜、漫遊、HSS/UDM 等關鍵系統責任人</li>
+          <li>企業資安 PM、架構設計與關鍵服務系統負責人</li>
+        </ul>
+      </section>
+
+      <!-- 你將獲得 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-sky-200 mb-2">🎁 你將獲得</h3>
+        <ul class="text-sm text-slate-200 space-y-1">
+          <li>一張涵蓋 CPE、服務網到核心網的「電信商全域防禦藍圖」。</li>
+          <li>零信任導入的關鍵檢核點與實作優先順序。</li>
+          <li>供應鏈攻擊案例（含 SK Telecom）的可複製教訓與改善方向。</li>
+          <li>面對後量子與 AI 攻擊面時，加密與防禦升級的大致路線。</li>
+        </ul>
+      </section>
+
+    </div>
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+  
     </div>
   </section>
 

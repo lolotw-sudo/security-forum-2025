@@ -53,55 +53,81 @@
      
     </div>
   </section>
+<!-- 更新懶人包區塊-->
+  <!-- AI 懶人包｜零信任架構導論 -->
+<section class="py-4 md:py-6">
+  <div class="mb-8 mx-auto max-w-6xl px-4">
+    <h2 class="text-xl font-bold mb-3">AI 懶人包（3 分鐘看懂）</h2>
+    <p class="mb-8 text-sm text-slate-300">
+      本場從「邊界已失效」談起，說明零信任不是單一產品，而是一套以身分、設備與行為為核心的安全架構，
+      並透過 xTrust / xTrust Bastion 示範維運與存取流程如何逐步走向零信任。
+    </p>
 
-  <section class="py-4 md:py-6">
-    <div class="mx-auto max-w-6xl px-4">
-      <h2 class="text-xl font-bold mb-3">AI 懶人包（3 分鐘看懂）</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">1｜什麼是「零信任」？</h3>
-          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>核心精神：<strong>永不預設信任、持續驗證、最小權限</strong>。</li>
-            <li>邊界不再是防火牆，而是每一次的存取請求。</li>
-            <li>不只是技術，更是身份、設備、應用與資料一整套策略。</li>
-          </ul>
-        </article>
-        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">2｜電信與企業如何落地？</h3>
-          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>從「使用者與管理員身分」開始：MFA、強認證、權限分層。</li>
-            <li>縮小 blast radius：網段／服務分區、微分段與細粒度 ACL。</li>
-            <li>導入存取 Proxy / Gateway，集中做存取控制與紀錄。</li>
-          </ul>
-        </article>
-        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-          <h3 class="font-bold text-cyan-300 mb-2">3｜實作時常見坑與建議</h3>
-          <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-            <li>一次要做完所有系統會失敗，建議以「關鍵服務」為單位分波導入。</li>
-            <li>要先整理帳號與權限，不然零信任只是多了一層複雜度。</li>
-            <li>持續監控與調整策略（Policy），而不是上線就放著不管。</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
+    <!-- 上排：三張卡片（核心觀念 / 實戰做法 / 落地清單） -->
+    <div class="mb-8 grid md:grid-cols-3 gap-6">
 
-  <section class="py-4 md:py-8">
-    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
-      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-        <h3 class="font-bold mb-2 text-cyan-300">適合對象</h3>
-        <p class="text-slate-300/90">企業與電信網路架構師、資安負責人、ID 管理與身分服務負責同仁。</p>
-      </div>
-      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-        <h3 class="font-bold mb-2 text-cyan-300">學完可以做什麼？</h3>
-        <ul class="list-disc pl-5 space-y-1 text-slate-300/90">
-          <li>為公司畫出簡易版「零信任藍圖」。</li>
-          <li>選出 1～2 個關鍵服務作為零信任 PoC 對象。</li>
-          <li>和主管討論分階段導入的影響與預期成效。</li>
+      <!-- 1｜核心觀念 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-cyan-200 mb-3">1｜核心觀念</h3>
+        <ul class="text-sm text-slate-200 space-y-2">
+          <li><span class="text-cyan-300 font-semibold">零信任 ≠ 產品：</span>不是買一套設備就完成，而是一套橫跨身分、設備、網路與應用的安全策略。</li>
+          <li><span class="text-cyan-300 font-semibold">邊界思維已過時：</span>SaaS、雲端與遠距辦公打破「內網＝安全」的假設，改為「永不預設信任，持續驗證」。</li>
+          <li><span class="text-cyan-300 font-semibold">信任分數：</span>依身分、設備健康度、登入地點與歷史行為綜合評估，每次存取都重新計算信任等級。</li>
         </ul>
-      </div>
+      </section>
+
+      <!-- 2｜實戰做法 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-emerald-200 mb-3">2｜實戰做法</h3>
+        <ul class="text-sm text-slate-200 space-y-2">
+          <li><span class="text-emerald-300 font-semibold">身分鑑別：</span>以 FIDO2 無密碼、多因子登入取代傳統帳密，由 IdP 統一發出「已驗證身分」聲明。</li>
+          <li><span class="text-emerald-300 font-semibold">設備鑑別：</span>透過 TPM 或 Agent 確認裝置是否為受管設備，並檢查是否符合防毒與補丁基線。</li>
+          <li><span class="text-emerald-300 font-semibold">動態授權：</span>結合身分、設備狀態、IP、時間與行為模型，對高風險情境提高驗證強度或直接阻擋。</li>
+          <li><span class="text-emerald-300 font-semibold">xTrust / Bastion：</span>xTrust 提供身分＋設備信任推斷，xTrust Bastion 將維運登入集中到零信任堡壘機管理。</li>
+        </ul>
+      </section>
+
+      <!-- 3｜落地清單（討論方向） -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-amber-200 mb-3">3｜落地清單（90 天討論方向）</h3>
+        <ul class="text-sm text-slate-200 space-y-2">
+          <li>盤點目前仍使用帳號＋密碼登入的關鍵系統與維運流程。</li>
+          <li>評估哪些高權限操作與遠端維運情境，適合優先導入 FIDO2 或零信任堡壘機。</li>
+          <li>確認組織 PC／筆電的 TPM 覆蓋率，討論老舊設備的替代方案。</li>
+          <li>檢視是否已有集中紀錄登入與維運行為，並思考如何導入行為分析與異常告警。</li>
+        </ul>
+      </section>
     </div>
-  </section>
+
+    <!-- 下排：兩張卡片（適合對象 / 你將帶走） -->
+    <div class="mb-8 grid md:grid-cols-2 gap-6">
+
+      <!-- 適合對象 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-sky-200 mb-2">🎯 適合對象</h3>
+        <ul class="text-sm text-slate-200 space-y-1">
+          <li>網路規設、系統與平台維運人員</li>
+          <li>資安架構師、SOC 與內控／稽核</li>
+          <li>政府、金融、關鍵基礎設施之 IT／資安人員</li>
+          <li>負責遠距辦公、雲端與多機構協作的技術團隊</li>
+        </ul>
+      </section>
+
+      <!-- 你將帶走 -->
+      <section class="p-6 rounded-xl bg-slate-900/60 border border-slate-700/50">
+        <h3 class="text-base font-semibold text-sky-200 mb-2">🎁 你將帶走</h3>
+        <ul class="text-sm text-slate-200 space-y-1">
+          <li>一個清晰的「零信任架構」心智圖，了解關鍵構面與常見誤解。</li>
+          <li>如何以身分＋設備＋行為分析，取代傳統「內外網」二分法的思考。</li>
+          <li>適合本單位優先導入的零信任場景（如維運登入、遠端存取）的討論起點。</li>
+          <li>在現有環境中導入 xTrust / xTrust Bastion 的可能位置與整合方向。</li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+</section>
+
 
   <footer class="mx-auto max-w-6xl px-4 py-10">
     <a href="../index.html#speakers"
